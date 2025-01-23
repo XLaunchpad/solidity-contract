@@ -14,7 +14,7 @@ import {
     STORE_ADDRESSES_MESSAGE,
     LAUNCH_X_NFT_FROM_SN_MESSAGE,
     LAUNCH_X_NFT_FROM_ETH_SELECTOR
-} from "src/libraries/constants/XLaunchpadConstants.sol";
+} from "src/libraries/LibXLaunchpadConstants.sol";
 
 library LibXLaunchpadSN {
     // LOGS (A.K.A. EVENTS)
@@ -79,7 +79,7 @@ library LibXLaunchpadSN {
     ) public returns (bytes32 msgHash) {}
 
     function storeL2NftAddress(address l1Address, uint256 l2Address) public returns (bytes32 msgHash) {
-        uint256[] memory payload = new uint256[](5);
+        uint256[] memory payload = new uint256[](3);
         payload[0] = STORE_ADDRESSES_MESSAGE;
         payload[1] = uint256(uint160(l1Address));
         payload[2] = l2Address;

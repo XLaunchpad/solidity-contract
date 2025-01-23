@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import {IAccessControl} from "openzeppelin-contracts/contracts/access/IAccessControl.sol";
+import {IAccessControl} from "@openzeppelin/contracts/access/IAccessControl.sol";
 
 bytes32 constant DEFAULT_ADMIN_ROLE = 0x00;
 

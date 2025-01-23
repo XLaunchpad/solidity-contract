@@ -9,7 +9,7 @@ pragma solidity ^0.8.0;
 
 import {LibDiamond} from "src/libraries/LibDiamond.sol";
 import {IDiamondLoupe} from "src/interfaces/IDiamondLoupe.sol";
-import {IERC165} from "openzeppelin-contracts/contracts/interfaces/IERC165.sol";
+import {IERC165} from "@openzeppelin/contracts/interfaces/IERC165.sol";
 
 // The functions in DiamondLoupeFacet MUST be added to a diamond.
 // The EIP-2535 Diamond standard requires these functions.

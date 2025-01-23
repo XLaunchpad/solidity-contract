@@ -15,7 +15,7 @@ import {
     STORE_ADDRESSES_MESSAGE,
     LAUNCH_X_NFT_FROM_SN_MESSAGE,
     LAUNCH_X_NFT_FROM_ETH_SELECTOR
-} from "src/libraries/constants/XLaunchpadConstants.sol";
+} from "src/libraries/LibXLaunchpadConstants.sol";
 
 library LibXLaunchpadETH {
     // STORAGE

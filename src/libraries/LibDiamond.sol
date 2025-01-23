@@ -8,7 +8,7 @@ pragma solidity ^0.8.0;
  * /*****************************************************************************
  */
 import {IDiamondCut, FacetCut, FacetCutAction} from "src/interfaces/IDiamondCut.sol";
-import {IAccessControl} from "openzeppelin-contracts/contracts/access/IAccessControl.sol";
+import {IAccessControl} from "@openzeppelin/contracts/access/IAccessControl.sol";
 
 error Diamond__InitializationFunctionReverted(address _initializationContractAddress, bytes _calldata);
 

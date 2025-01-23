@@ -5,7 +5,7 @@ import {LibXLaunchpadSN, NftType} from "../libraries/LibXLaunchpadSN.sol";
 import {LibXLaunchpadETH} from "../libraries/LibXLaunchpadETH.sol";
 import {LibAccessControl, DEFAULT_ADMIN_ROLE} from "../libraries/LibAccessControl.sol";
 
-contract LaunchpadFacet {
+contract XLaunchpadFacet {
     function setXLaunchpadL2Address(uint256 _l2Address) external {
         LibAccessControl._checkRole(DEFAULT_ADMIN_ROLE);
         LibXLaunchpadSN.setXLaunchpadL2Address(_l2Address);
