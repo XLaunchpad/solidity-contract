@@ -5,4 +5,5 @@ import {NftType} from "./Types.sol";
 
 // Launchpad Events
 event NftLaunchedOnETH(address indexed, NftType);
+
 event NftLaunchedOnSN(uint256 indexed, NftType);
